@@ -59,11 +59,11 @@
     
        @keyframes scroll {
         0% {
-          transform: rotateY(-100deg);
+          transform:translateX(-100px);
           clip-path: inset(  100% 100% 0 0);
         }
         100%{
-          transform: rotateY(0deg);
+          transform: translateX(0px);
           clip-path: inset(0 0 0 0);
         }
         
