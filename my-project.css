@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900& display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: rgb(31, 36, 45);
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: rgb(0, 238, 255);
+}
+body {
+  background-color: #1f242d;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: var(--bg-color);
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: bold;
+}
+.navbar-brand:hover {
+  color: var(--text-color);
+}
+
+a.active {
+  color: #0ef !important;
+}
+.nav-link {
+  color: var(--text-color);
+}
+.nav-link:hover {
+  color: var(--main-color);
+  border-bottom: 2px solid #0ef;
+}
+
+.bi-list {
+  color: white;
+  font-size: 2rem;
+}
+.title{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+  padding: 10px 15px 10px 15px;
+  border-bottom: 10px solid rgb(7, 161, 143);
+  font-family: "Cinzel", serif;
+  animation: btn-border 6s infinite alternate;
+  cursor: pointer;
+  transition: .3s ease;
+  border-radius: 10px;
+}
+h1:hover{
+    background-color:     rgb(22, 3, 41);
+    color: #d8d8d8;
+    transition: .3s ease;
+}
+@keyframes btn-border {
+    0%{
+        border-bottom: 5px solid red;
+        border-top: 5px solid yellow;
+        border-left: 5px solid #E3651D;
+        border-right: 5px solid #4477CE;
+    }
+    25%{
+        border-bottom: 5px solid yellow;
+        border-top: 5px solid rgb(0, 123, 255);
+        border-left: 5px solid #750E21;
+        border-right: 5px solid #5F264A;
+    }
+    50%{
+        border-top: 5px solid rgb(43, 17, 100);
+        border-bottom: 5px solid purple;
+        border-left: 5px solid #3C0753;
+        border-right: 5px solid #2F58CD;
+    }
+    75%{
+        border-top: 5px solid rgb(225, 0, 255);
+        border-bottom: 5px solid rgba(240, 0, 116, 0.939);
+        border-left: 5px solid #503C3C;
+        border-right: 5px solid #3C2A21;
+    }
+
+    100%{
+        border-top: 5px solid rgb(108, 108, 4);
+        border-bottom: 5px solid green;
+        border-left: 5px solid #22092C;
+        border-right: 5px solid #C69749;
+    }
+    0%{
+        border-top: 5px solid yellow;
+        border-bottom: 5px solid red;
+        border-left: 5px solid #E3651D;
+        border-right: 5px solid #4477CE;
+    }
+    
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  /* height: 400px; */
+  margin-top: 30px;
+  padding: 20px 0 30px 0;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+    from var(--border-angle),
+    #213,
+    #112 5%,
+    #112 60%,
+    #213 95%
+  );
+
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(
+    from var(--border-angle),
+    transparent 25%,
+    #08f,
+    #f03 99%,
+    transparent
+  );
+
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+    var(--main-bg) border-box;
+
+  background-position: center center;
+
+  animation: bg-spin 5s linear infinite;
+}
+.projects .row {
+  width: 80%;
+ 
+  padding: 10px;
+  position: relative;
+}
+.projects .row .col-lg-5 img {
+  width: 100%;
+ 
+}
+
+
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+
+
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+.projects .row .col-lg-7
+{
+    text-align: center;
+    
+}
+.projects .row .col-lg-7 h2{
+    font-family: "Cinzel";
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(172, 17, 17);
+}
+p{
+    padding: 15px;
+    text-align: center;
+    font-family: "Cinzel";
+}
+button{
+    background-color: #222831 !important;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Cinzel";
+    transition: .3s ease;
+}
+button:hover{
+    background-color: #082355 !important;
+}
+.projects .row .col-lg-5{
+    margin-top: 20px;
+    
+}
